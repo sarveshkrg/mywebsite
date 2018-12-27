@@ -31,7 +31,7 @@
                     <a class="nav-link" href="{% url 'index' %}"><span class="oi" data-glyph="home" title="home" aria-hidden="true"></span> HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}"><span class="oi" data-glyph="people" title="people" aria-hidden="true"></span> SIGN UP</a>
+                    <a class="nav-link" href="{% url 'user_create_view' %}"><span class="oi" data-glyph="people" title="people" aria-hidden="true"></span> SIGN UP</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'index' %}"><span class="oi" data-glyph="lock-unlocked" title="lock-unlocked" aria-hidden="true"></span> LOGIN</a>
@@ -42,9 +42,8 @@
                 </ul>
               </div> 
             </nav>
+            {% block body %}
+            {% endblock %}
         </div>
-        {% block body %}
-
-        {% endblock %}
     </body>
 </html>
