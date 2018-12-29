@@ -6,6 +6,7 @@
     <div class="col-sm-4 content-default make-center">
         <h2 class="text-center">LOGIN</h2>
         <form action="" method="POST">
+            {% csrf_token %}
             <div class="form-group">
             <label for="mobileno">Mobile No:</label>
             <input type="number" class="form-control" id="mobileno">
